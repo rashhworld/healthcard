@@ -42,7 +42,3 @@ def process_pdf(filepath):
     qr_img, qr_data = decode_qr_code(image_path)
     result_path = merge_details_card(user_image_path, qr_img, qr_data)
     return result_path
-
-
-if __name__ == "__main__":
-    app.run(debug=True)
